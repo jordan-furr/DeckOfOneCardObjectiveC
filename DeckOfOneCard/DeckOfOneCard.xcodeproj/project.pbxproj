@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		C50F1807242AA57B00F83DA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C50F1806242AA57B00F83DA4 /* AppDelegate.m */; };
 		C50F180A242AA57B00F83DA4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C50F1809242AA57B00F83DA4 /* SceneDelegate.m */; };
-		C50F180D242AA57B00F83DA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C50F180C242AA57B00F83DA4 /* ViewController.m */; };
 		C50F1810242AA57B00F83DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50F180E242AA57B00F83DA4 /* Main.storyboard */; };
 		C50F1812242AA57D00F83DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50F1811242AA57D00F83DA4 /* Assets.xcassets */; };
 		C50F1815242AA57D00F83DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C50F1813242AA57D00F83DA4 /* LaunchScreen.storyboard */; };
 		C50F1818242AA57D00F83DA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C50F1817242AA57D00F83DA4 /* main.m */; };
+		C50F1822242AAAB700F83DA4 /* JEFCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C50F1821242AAAB700F83DA4 /* JEFCard.m */; };
+		C50F1825242AC34800F83DA4 /* JEFCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = C50F1824242AC34800F83DA4 /* JEFCardController.m */; };
+		C50F182A242ADC1D00F83DA4 /* JEFCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50F1829242ADC1D00F83DA4 /* JEFCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +24,17 @@
 		C50F1806242AA57B00F83DA4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C50F1808242AA57B00F83DA4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		C50F1809242AA57B00F83DA4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		C50F180B242AA57B00F83DA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C50F180C242AA57B00F83DA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C50F180F242AA57B00F83DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C50F1811242AA57D00F83DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50F1814242AA57D00F83DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C50F1816242AA57D00F83DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C50F1817242AA57D00F83DA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C50F1820242AAAB700F83DA4 /* JEFCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JEFCard.h; sourceTree = "<group>"; };
+		C50F1821242AAAB700F83DA4 /* JEFCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEFCard.m; sourceTree = "<group>"; };
+		C50F1823242AC34800F83DA4 /* JEFCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JEFCardController.h; sourceTree = "<group>"; };
+		C50F1824242AC34800F83DA4 /* JEFCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEFCardController.m; sourceTree = "<group>"; };
+		C50F1828242ADC1C00F83DA4 /* DeckOfOneCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfOneCard-Bridging-Header.h"; sourceTree = "<group>"; };
+		C50F1829242ADC1D00F83DA4 /* JEFCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JEFCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +67,55 @@
 		C50F1804242AA57B00F83DA4 /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
+				C50F180E242AA57B00F83DA4 /* Main.storyboard */,
+				C50F1827242ADB5800F83DA4 /* Controllers */,
+				C50F1826242ADB5200F83DA4 /* Model */,
+				C50F181E242AA5F300F83DA4 /* View */,
+				C50F181F242AA60E00F83DA4 /* Resources */,
+			);
+			path = DeckOfOneCard;
+			sourceTree = "<group>";
+		};
+		C50F181E242AA5F300F83DA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C50F1829242ADC1D00F83DA4 /* JEFCardViewController.swift */,
+				C50F1828242ADC1C00F83DA4 /* DeckOfOneCard-Bridging-Header.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C50F181F242AA60E00F83DA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				C50F1805242AA57B00F83DA4 /* AppDelegate.h */,
 				C50F1806242AA57B00F83DA4 /* AppDelegate.m */,
 				C50F1808242AA57B00F83DA4 /* SceneDelegate.h */,
 				C50F1809242AA57B00F83DA4 /* SceneDelegate.m */,
-				C50F180B242AA57B00F83DA4 /* ViewController.h */,
-				C50F180C242AA57B00F83DA4 /* ViewController.m */,
-				C50F180E242AA57B00F83DA4 /* Main.storyboard */,
 				C50F1811242AA57D00F83DA4 /* Assets.xcassets */,
 				C50F1813242AA57D00F83DA4 /* LaunchScreen.storyboard */,
 				C50F1816242AA57D00F83DA4 /* Info.plist */,
 				C50F1817242AA57D00F83DA4 /* main.m */,
 			);
-			path = DeckOfOneCard;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C50F1826242ADB5200F83DA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C50F1820242AAAB700F83DA4 /* JEFCard.h */,
+				C50F1821242AAAB700F83DA4 /* JEFCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C50F1827242ADB5800F83DA4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C50F1823242AC34800F83DA4 /* JEFCardController.h */,
+				C50F1824242AC34800F83DA4 /* JEFCardController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +149,7 @@
 				TargetAttributes = {
 					C50F1801242AA57B00F83DA4 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -146,10 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50F180D242AA57B00F83DA4 /* ViewController.m in Sources */,
+				C50F1825242AC34800F83DA4 /* JEFCardController.m in Sources */,
 				C50F1807242AA57B00F83DA4 /* AppDelegate.m in Sources */,
 				C50F1818242AA57D00F83DA4 /* main.m in Sources */,
 				C50F180A242AA57B00F83DA4 /* SceneDelegate.m in Sources */,
+				C50F182A242ADC1D00F83DA4 /* JEFCardViewController.swift in Sources */,
+				C50F1822242AAAB700F83DA4 /* JEFCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,14 +334,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCard/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordanfurr98.DeckOfOneCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCard/View/DeckOfOneCard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,14 +354,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCard/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jordanfurr98.DeckOfOneCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCard/View/DeckOfOneCard-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

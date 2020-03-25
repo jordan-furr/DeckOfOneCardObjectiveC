@@ -1,24 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="JEFCardViewController" customModule="DeckOfOneCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xgy-Gr-AKV">
+                                <rect key="frame" x="50" y="182" width="314" height="439.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xgy-Gr-AKV" secondAttribute="height" multiplier="2.5:3.5" id="ZFg-tp-Jhy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6H-OC-GDr">
+                                <rect key="frame" x="60" y="114" width="294" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ghe-aF-s4G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.6178149288" green="0.1427258293" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dw-Kn-5db">
+                                <rect key="frame" x="60" y="662.5" width="294" height="45"/>
+                                <color key="backgroundColor" red="0.6178149288" green="0.1427258293" blue="0.0" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1fF-Ki-RVP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="21"/>
+                                <state key="normal" title="Draw a new card">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawnew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8L3-bG-oCs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7dw-Kn-5db" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="8kl-KC-OKC"/>
+                            <constraint firstItem="Xgy-Gr-AKV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="H3p-ms-Rpz"/>
+                            <constraint firstItem="7dw-Kn-5db" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lic-mv-6tj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6H-OC-GDr" secondAttribute="trailing" constant="60" id="M3q-UZ-tdC"/>
+                            <constraint firstItem="7dw-Kn-5db" firstAttribute="top" secondItem="Xgy-Gr-AKV" secondAttribute="bottom" constant="41" id="N3T-79-E9A"/>
+                            <constraint firstItem="Xgy-Gr-AKV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QKo-4p-8Rw"/>
+                            <constraint firstItem="A6H-OC-GDr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="W8n-yu-5kd"/>
+                            <constraint firstItem="A6H-OC-GDr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="cht-O5-hGi"/>
+                            <constraint firstItem="Xgy-Gr-AKV" firstAttribute="top" secondItem="A6H-OC-GDr" secondAttribute="bottom" constant="30" id="oMg-SB-AiV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7dw-Kn-5db" secondAttribute="trailing" constant="60" id="tAo-hM-Eb4"/>
+                            <constraint firstItem="A6H-OC-GDr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="viG-gh-XGj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardimage" destination="Xgy-Gr-AKV" id="xiE-Fg-Y11"/>
+                        <outlet property="namelabel" destination="A6H-OC-GDr" id="pzY-EV-f2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
     </scenes>
 </document>
